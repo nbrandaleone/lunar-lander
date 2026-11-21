@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Lunar Lander — Rust &amp; WebAssembly</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="game-canvas"></canvas>
+
+  <div class="hud hud-left">
+    <div class="hud-row"><span class="label">SCORE</span><span id="hud-score">0000</span></div>
+    <div class="hud-row"><span class="label">TIME</span><span id="hud-time">0:00</span></div>
+    <div class="hud-row"><span class="label">FUEL</span><span id="hud-fuel">1000</span></div>
+  </div>
+
+  <div class="hud hud-right">
+    <div class="hud-row"><span class="label">ALTITUDE</span><span id="hud-alt">0000</span></div>
+    <div class="hud-row"><span class="label">HORIZONTAL SPEED</span><span id="hud-vx">000</span></div>
+    <div class="hud-row"><span class="label">VERTICAL SPEED</span><span id="hud-vy">000</span></div>
+  </div>
+
+  <div id="overlay" class="overlay"></div>
+
+  <div class="footer-left">LUNAR LANDER // RUST + WASM</div>
+  <div class="footer-right">ARROWS OR WASD TO FLY &bull; CLICK OR SPACE TO START</div>
+
+  <script src="audio.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
